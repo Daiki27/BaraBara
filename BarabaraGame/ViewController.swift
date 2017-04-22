@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func start(){
+        self.performSegue(withIdentifier: "Game", sender: nil)
+    }
+    
+    @IBAction func ranking(){
+        self.performSegue(withIdentifier: "Ranking", sender: nil)
+    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
